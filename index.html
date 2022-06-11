@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Pomodoro Clock</title>
+</head>
+
+<body>
+    <header class="header-wrapper">
+        <div class="header-text-container">
+            <h1>Pomodoro Clock</h1>
+        </div>
+    </header>
+    <main>
+        <div class="buttons-wrapper">
+            <button class='button play' onclick="playPause()"></button>
+            <button class='reset' onclick="reset()">Reset</button>
+        </div>
+        <div class="card-main">
+            <div class="card-title">
+                <h2>25 + 5 Timer Clock</h2>
+            </div>
+            <div class="timer-wrapper">
+                <div id="timer"></div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-text-container">
+            <p>Made by: Rodrigo Fentanes</p>
+            <a href="https://www.github.com/rodrfentanes21" target="_blank" id="profile-link"><i
+                    class="fab fa-github"></i></a>
+        </div>
+    </footer>
+</body>
+<script src="app.js"></script>
+
+</html>

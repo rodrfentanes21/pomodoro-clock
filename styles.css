@@ -1,0 +1,191 @@
+body {
+    font-family: Raleway, sans-serif;
+    background-color: #9d848b;
+    color: #4d4848;
+}
+
+.header-wrapper {
+    position: fixed;
+    padding-left: 0 !important;
+    top: 0;
+    left: 0;
+    background-color: #131410;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    color: #4d4848;
+    text-decoration: none;
+}
+
+.header-text-container {
+    position: relative;
+    margin: auto;
+}
+
+.header-wrapper>.header-text-container {
+    text-align: center;
+    color: #c8a8ad;
+    font-size: 1em;
+}
+
+/* MAIN */
+
+main {
+    position: fixed;
+    width: 100%;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-main {
+    position: absolute;
+    top: 30vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-title {
+    position: relative;
+    top: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.timer-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+#timer {
+    width: 200px;
+    height: 200px;
+    user-select: none;
+}
+
+.base-timer__circle {
+    fill: none;
+    stroke: none;
+}
+
+.base-timer__label {
+    position: absolute;
+
+    /* Size should match the parent container */
+    width: 200px;
+    height: 200px;
+
+    top: 25%;
+
+    /* Create a flexible box that centers content vertically and horizontally */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Sort of an arbitrary number; adjust to your liking */
+    font-size: 30px;
+}
+
+.base-timer__path-elapsed {
+    stroke-width: 1px;
+    stroke: #4d4848;
+}
+
+.content {
+    font-size: 20px;
+    margin-top: 45%;
+    z-index: 1;
+    text-align: center;
+}
+
+.content span {
+    display: block;
+}
+
+/* FOOTER */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #131410;
+    padding: 10px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-text-container {
+    width: 95%;
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+footer>.footer-text-container {
+    color: #c8a8ad;
+    font-size: 1em;
+    margin: auto;
+}
+
+/*BUTTON*/
+
+.buttons-wrapper {
+    position: fixed;
+    height: 100%;
+    top: 20%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40%;
+}
+
+.button.play {
+    box-sizing: none;
+    margin-right: auto;
+    margin-left: 30px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 0 20px 40px;
+    background-color: transparent;
+    border-color: transparent transparent transparent #4d4848;
+}
+
+.reset {
+    background-color: transparent;
+    border: none;
+    font-size: 2em;
+    color: #4d4848;
+}
+
+@media screen and (max-height: 750px) {
+    .buttons-wrapper {
+        gap: 50%;
+    }
+}
